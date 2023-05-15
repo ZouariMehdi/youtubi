@@ -12,12 +12,48 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 5px 5px 10px 0px rgba(113, 113, 113, 0.581);
+
+      }
+      ul>li{
+        list-style: none;
+        font-size: 20px;
+        margin: 20px 0px;
+      }
+      ul>li:hover{
+        color: red;
+        cursor: pointer;
+      }
+      .card{
+        border-radius: 40px;
+        overflow: hidden;
+        transition: 0.5s ease;
+
+      }
+      .card:hover{
+        box-shadow: 5px 5px 10px 0px rgba(113, 113, 113, 0.581);
+      }
+      .card img{
+        transition: 0.5s ease
+
+      }
+      .card:hover img{
+      transform: scale(1.1);
+      }
+      
+    </style>
   </head>
   <body>
     <!-- start header section -->
     <div class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <a class="navbar-brand me-5" href="#">
               <img
@@ -83,28 +119,116 @@
         <div class="row g-5">
             <div class="col-2 d-sm-block d-none ">
                 <ul>
-                    <h1>hello</h1>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
+                    
+                    <hr>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
+                    
+                    <hr>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
+                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
+                    
                     <hr>
                 </ul>
-                <ul>
-                    <h1>hello</h1>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <li>lkhjdslkfjhsd</li>
-                    <hr>
-                </ul>
+              
             </div>
             <div class="col-10 ">
                 <div class="row mt-2 g-2  justify-content-left">
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card">
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card" >
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card" >
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card" >
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card" >
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
+                      <div class="card" >
+                        <img
+                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                            <h5>Video Title</h5>
+                            <h6 class="chaine">Samara</h6>
+                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+
+
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
                       <div class="card" style="width: 18rem">
                         <img
