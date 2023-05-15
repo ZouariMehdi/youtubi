@@ -12,41 +12,43 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-      .header{
-        position: sticky;
-        top: 0;
+      .header {
         z-index: 100;
-        box-shadow: 5px 5px 10px 0px rgba(113, 113, 113, 0.581);
-
       }
-      ul>li{
+      ul > li {
         list-style: none;
         font-size: 20px;
         margin: 20px 0px;
       }
-      ul>li:hover{
+      ul > li:hover {
         color: red;
         cursor: pointer;
       }
-      .card{
+      .card {
         border-radius: 40px;
         overflow: hidden;
         transition: 0.5s ease;
-
       }
-      .card:hover{
+      .card:hover {
         box-shadow: 5px 5px 10px 0px rgba(113, 113, 113, 0.581);
       }
-      .card img{
-        transition: 0.5s ease
-
+      .card img {
+        transition: 0.5s ease;
       }
-      .card:hover img{
-      transform: scale(1.1);
+      .card:hover img {
+        transform: scale(1.1);
       }
-      
+      #aside > li > i {
+        margin-right: 20px;
+      }
     </style>
   </head>
   <body>
@@ -62,6 +64,7 @@
                 height="24"
                 class="d-inline-block align-text-top"
               />
+              <span style="margin-left: 10px; font-weight: bold">Youtubi</span>
             </a>
             <button
               class="navbar-toggler"
@@ -97,9 +100,10 @@
                   </a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form class="d-flex me-auto" role="search">
                 <input
-                  class="form-control me-2"
+                  style="width: 400px"
+                  class="form-control me-3"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
@@ -116,141 +120,151 @@
     <!-- end header section -->
     <!-- start main section -->
     <div class="container-fluid">
-        <div class="row g-5">
-            <div class="col-2 d-sm-block d-none ">
-                <ul>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
-                    
-                    <hr>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
-                    
-                    <hr>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Acceuil</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Shorts</span></li>
-                    <li><i class="fa-solid fa-house-user"></i> <span>Abonemnt</span></li>
-                    
-                    <hr>
-                </ul>
-              
-            </div>
-            <div class="col-10 ">
-                <div class="row mt-2 g-2  justify-content-left">
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card">
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+      <div class="row g-5">
+        <div class="col-2 d-sm-block d-none">
+          <ul id="aside">
+            <li><i class="fa-solid fa-house-user"></i> <span>Home</span></li>
+            <li><i class="fa-solid fa-play"></i><span>Shorts</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Subscription</span></li>
 
+            <hr />
+            <li><i class="fa-solid fa-book-open"></i> <span>Library</span></li>
+            <li>
+              <i class="fa-solid fa-clock-rotate-left"></i> <span>History</span>
+            </li>
+            <li><i class="fa-solid fa-video"></i><span>Your Videos</span></li>
 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" >
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" >
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" >
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" >
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" >
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center">
-                      <div class="card" style="width: 18rem">
-                        <img
-                          src="https://static-cse.canva.com/blob/1053959/1600w-wK95f3XNRaM.jpg"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                            <h5>Video Title</h5>
-                            <h6 class="chaine">Samara</h6>
-                            <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
-
-
-                        </div>
-                      </div>
-                    </div>
-                
-                
-                </div>
-            </div>
-        
+            <hr />
+            <li>
+              <i class="fa-regular fa-clock"></i> <span>watch later</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-thumbs-up"></i> <span>Liked Video</span>
+            </li>
+            <hr />
+          </ul>
         </div>
-    
+        <div class="col-10">
+          <div class="row mt-2 g-2 justify-content-left">
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/aliabdaal.jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>be more productive</h5>
+                  <h6 class="chaine">Ali Abdaal</h6>
+                  <p><span>145M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/elzero web school.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>Html</h5>
+                  <h6 class="chaine">elzero web school</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img
+                  src="/images/fcc_meta_1920X1080-indigo.png"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5>Programming</h5>
+                  <h6 class="chaine">FreeCodeCamp</h6>
+                  <p><span>184M Vues</span>. <span>Il y'a 24 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/elda7i7.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>Science</h5>
+                  <h6 class="chaine">el da7i7</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/images (3).jpeg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>English</h5>
+                  <h6 class="chaine">Zamerican English</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/zouarischool.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>Education</h5>
+                  <h6 class="chaine">Zouari school</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/maxresdefault (1).jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>Technologie</h5>
+                  <h6 class="chaine">MKHB</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img src="/images/ALI.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5>self development</h5>
+                  <h6 class="chaine">Ali Mohammed Ali</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-12 ms-auto me-auto d-flex justify-content-center"
+            >
+              <div class="card" style="width: 100%">
+                <img
+                  src="/images/internet make coder.jpeg"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5>Coding</h5>
+                  <h6 class="chaine">Internt Make Coder</h6>
+                  <p><span>14M Vues</span>. <span>Il y'a 2 heuers</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- end main section -->
     <!-- bootsrap js file -->
     <script
